@@ -22,7 +22,8 @@ hr {
   margin-bottom: 30px;
 }
 
-div {
+div,
+article {
     display: flex;
     max-width: 1024px;
     width: 100%;
@@ -41,6 +42,7 @@ div {
 
 .name h2 {
   font-size: 20px;
+  font-weight: normal;
 }
 
 .titles {
@@ -76,7 +78,6 @@ div {
 .uppercase {
   width: 40%;
   text-transform: uppercase;
-  /* margin-right: 80px; */
 }
 
 .address {
@@ -88,4 +89,110 @@ div {
 
 .location {
   width: 60%;
+}
+
+.title {
+  width: 35%;
+  max-width: 270px;
+  flex-direction: column;
+}
+
+.profile p {
+  line-height: 1.5em;
+}
+
+.employment,
+.education,
+.courses {
+  flex-direction: column;
+}
+
+.employment__title,
+.education__title,
+.courses__title {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.duration,
+.year {
+  font-size: 14px;
+}
+
+.where {
+  flex-direction: column;
+}
+
+.company,
+.university {
+  color: rgb(150, 150, 150);
+}
+
+.skills__list,
+.languages__list {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.skill,
+.language {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.skill__description,
+.languages__description {
+  width: 60%;
+}
+
+.skill__points {
+  width: 40%;
+}
+
+i {
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+i:not(:last-child) {
+  margin-right: 10px;
+}
+
+.skill:first-child i:not(:last-child),
+.skill:nth-child(2) i:not(:last-child),
+.skill:nth-child(3) i:not(:last-child),
+.skill:nth-child(4) i:not(:last-child),
+.skill:nth-child(5) i:not(:last-child),
+.skill:last-child i:not(:last-child) {
+  background-color: rgb(0, 191, 255);
+}
+
+.skill:nth-child(3) i:nth-child(4),
+.skill:nth-child(4) i:nth-child(4) {
+  background-color: lightgray;
+}
+
+.languages {
+  margin-bottom: 50px;
+}
+
+.language {
+  justify-content: space-between;
+}
+
+.language:first-child i:not(:last-child) {
+  background-color: rgb(0, 191, 255);
+}
+
+.language:first-child i:nth-child(4) {
+  background-color: lightgray;
+}
+
+.language:last-child i {
+  background-color: rgb(0, 191, 255);
 }
